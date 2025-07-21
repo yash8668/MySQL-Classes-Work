@@ -1,36 +1,40 @@
--- single line comment 
+-- Single line Comment
 
-/*
-multi 
-line 
-comment 
+/* 
+Multi 
+Line 
+Comment
 */
 
--- database  related queries --
-
-create database Travelagent21 ;
-
-use Travelagent21 ;
-
--- -------------------Topics of The Day------------------------------------------------
--- DataTypes ,Constraints , Clauses & Cammands -----
-
-/*
-Reference -
-
-1. Daily sessions,Google Classroom
-2. discuse your doubts / Idea / Daily work with batchmates --->Ask with your mentor
-3. Github / w3 school
-4. Chatgpt, blackBox.ai
-5. Canva
-
-*/
-
-
- -- Data type 
+-- database related queries --
  
+create database Travelagent21;
+
+use Travelagent21;
+
+drop database travelagent21;
+
+
+
+-- ----------------------------------- Topics of the Day-------------------------
+
+-- Data Types, Constraints, Clauses & Cammands
+
 /*
-The data type of a column in a MySQL database tells us what kind of values that column can hold,
+Reference - 
+
+1. Daily Sessions, Google Classroom
+2. discuss your doubts/ideas/daily work with Batchmates -------> Ask with your mentor
+3. Github, w3 school
+4. Chatgpt, blackbox.ai
+5. canva, 15 minuts revision in morning & 15 minuts revision at night before sleep.
+*/
+
+-- Data types
+
+/*
+
+The data type of a column in a MySQL database tells us what kind of values that column can hold, 
 such as:
 -- Integer (whole numbers)
 -- Character (text)
@@ -46,7 +50,7 @@ such as:
 -- Decimal (decimal values)
 
 Every column in a database table must have a name and a data type.
-When creating a table, an SQL developer needs to choose the right data type for each column.
+When creating a table, an SQL developer needs to choose the right data type for each column. 
 This helps MySQL know what kind of data to expect and how to work with it.
 
 Datatypes defines the type & size of data to be stored in an attribute. as- id int (1,2,3,...)
@@ -60,11 +64,11 @@ Note- Choosing the correct data type is important for ensuring data accuracy and
 
 */
 
--- Constraints
+-- Constraints 
 /*
-In MySQL, constraints are rules applied to columns in a database table to enforce data integrity and
-ensure the accuracy and reliability of the data stored in the database. Constraints help maintain the
-quality of the data by restricting the types of data that can be entered into a table and by defining
+In MySQL, constraints are rules applied to columns in a database table to enforce data integrity and 
+ensure the accuracy and reliability of the data stored in the database. Constraints help maintain the 
+quality of the data by restricting the types of data that can be entered into a table and by defining 
 relationships between tables.
 
 
@@ -172,9 +176,9 @@ Constraints are essential tools for maintaining a well-structured and reliable d
 
 
  /*
- In MySQL, commands are instructions that you use to interact with the database.
- They allow you to perform various operations such as creating databases and tables,
- inserting and updating data, querying data, and managing user permissions.
+ In MySQL, commands are instructions that you use to interact with the database. 
+ They allow you to perform various operations such as creating databases and tables, 
+ inserting and updating data, querying data, and managing user permissions. 
  MySQL commands can be categorized into several types based on their functionality:
 
 DDL(Data Definition Language): Defines database structures (CREATE, ALTER, DROP, TRUNCATE).
@@ -187,9 +191,9 @@ TCL(Transaction Control Language): Manages transactions (COMMIT, ROLLBACK, SAVEP
 
 
 /*
-Clauses are components of a SQL statement that specify the actions to be performed on
-the data in a database. Each clause serves a specific purpose and helps to define the
-structure and behavior of the SQL query. Clauses can be combined to create complex
+Clauses are components of a SQL statement that specify the actions to be performed on 
+the data in a database. Each clause serves a specific purpose and helps to define the 
+structure and behavior of the SQL query. Clauses can be combined to create complex 
 queries that retrieve, manipulate, or manage data.
 
 the main clauses in MySQL include:
@@ -206,18 +210,18 @@ LIMIT: Limits the number of rows returned.
 /*
 Clauses Vs Cammands --
 
-Commands:
-These are the main instructions you use to interact with the database
+Commands: 
+These are the main instructions you use to interact with the database 
 (e.g., SELECT, INSERT, UPDATE, DELETE, CREATE, etc.). They perform specific actions on the database.
 
-Clauses:
-These are parts of SQL statements that provide additional details or conditions to the commands
+Clauses: 
+These are parts of SQL statements that provide additional details or conditions to the commands 
 (e.g., WHERE, ORDER BY, GROUP BY, etc.). They help refine the command's operation.
 
 Select * from students where name = 'Kavya';
 
-In essence, commands are the actions you want to perform, while clauses are the conditions
-or modifications that help define how those actions should be executed. Understanding both is crucial
+In essence, commands are the actions you want to perform, while clauses are the conditions 
+or modifications that help define how those actions should be executed. Understanding both is crucial 
 for effective database management and querying.
  
 */
@@ -227,7 +231,7 @@ for effective database management and querying.
  /*
  
  1. WHERE Clause
-The WHERE clause is used to filter records in a table based on specific conditions.
+The WHERE clause is used to filter records in a table based on specific conditions. 
 It is typically used with SELECT, UPDATE, and DELETE statements.
 
 Syntax:
@@ -237,7 +241,7 @@ FROM table_name
 WHERE condition;  
 
 2. DISTINCT Clause
-The DISTINCT clause is used to return unique values from a column by removing duplicates
+The DISTINCT clause is used to return unique values from a column by removing duplicates 
 in the result set.
 
 Syntax:
@@ -246,17 +250,17 @@ SELECT DISTINCT column1
 FROM table_name;  
 
 3. FROM Clause
-The FROM clause specifies the table or tables from which the data is retrieved.
-It is a mandatory part of the SELECT statement and can also be used with joins for
+The FROM clause specifies the table or tables from which the data is retrieved. 
+It is a mandatory part of the SELECT statement and can also be used with joins for 
 combining data from multiple tables.
 
 Syntax:
 
 SELECT column1, column2  
-FROM table_name;
+FROM table_name; 
 
 4. ORDER BY Clause
-The ORDER BY clause is used to sort the result set in ascending (ASC) or descending (DESC) order
+The ORDER BY clause is used to sort the result set in ascending (ASC) or descending (DESC) order 
 based on one or more columns.
 
 Syntax:
@@ -266,7 +270,7 @@ FROM table_name
 ORDER BY column_name [ASC|DESC];  
 
 5. GROUP BY Clause
-The GROUP BY clause groups rows with the same values into summary rows,
+The GROUP BY clause groups rows with the same values into summary rows, 
 often used with aggregate functions (e.g., COUNT, SUM, AVG).
 
 Syntax:
@@ -276,7 +280,7 @@ FROM table_name
 GROUP BY column1;
 
 6. HAVING Clause
-The HAVING clause is used to filter grouped data after the GROUP BY clause.
+The HAVING clause is used to filter grouped data after the GROUP BY clause. 
 It works similarly to the WHERE clause but is applied to aggregated results.
 
 Syntax:
@@ -287,7 +291,7 @@ GROUP BY column1
 HAVING condition;  
 
 7. LIMIT (or FETCH or TOP) Clause
-The LIMIT clause is used to restrict the number of rows returned by a query.
+The LIMIT clause is used to restrict the number of rows returned by a query. 
 Different databases may use variations like FETCH or TOP.
 
 Syntax (MySQL):
@@ -307,7 +311,7 @@ JOIN table2
 ON table1.common_column = table2.common_column;  
 
 9. UNION Clause
-The UNION clause is used to combine the results of two or more SELECT statements.
+The UNION clause is used to combine the results of two or more SELECT statements. 
 Duplicate rows are removed by default.
 
 Syntax:
@@ -339,7 +343,7 @@ SELECT column1,
            WHEN condition2 THEN result2  
            ELSE result3  
        END AS alias_name  
-FROM table_name;
+FROM table_name; 
 
 12. IN Clause
 The IN clause is used to filter records based on a list of values.
@@ -360,7 +364,7 @@ FROM table_name
 WHERE column_name BETWEEN value1 AND value2;  
 
 14. LIKE Clause
-The LIKE clause is used to search for a specified pattern in a column. Wildcards include % (any number of
+The LIKE clause is used to search for a specified pattern in a column. Wildcards include % (any number of 
 characters) and _ (a single character).
 
 example-  Develearn
@@ -381,10 +385,10 @@ Syntax:
 
 SELECT column1, column2  
 FROM table_name  
-WHERE EXISTS (subquery);
+WHERE EXISTS (subquery); 
 
 16. AS Clause
-The AS clause is used to provide an alias (temporary name) for columns or tables,
+The AS clause is used to provide an alias (temporary name) for columns or tables, 
 improving query readability.
 
 Syntax:
@@ -396,9 +400,9 @@ FROM table_name;
 
 
 /*
-SELECT Query :
+SELECT Query : 
 
-The SELECT statement is used to retrieve data from a database table.
+The SELECT statement is used to retrieve data from a database table. 
 It allows you to specify the columns you want to fetch and apply conditions to filter the results.
 
 Syntax-
